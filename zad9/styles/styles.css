@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+::root {
+  --main-bg: #29939D;
+  --main-dark: #263560;
+  --accent: #F6AD4A;
+  --white: #FAF8F4;
+  --light-neutral: #E9E0D0;
+  --neutral: #5a5b5e;
+}
+body {
+  background-color: hsla(272, 15%, 50%, 1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Open Sans", sans-serif;  
+}
+header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+  background-color: #263560;
+  margin-bottom: 2rem;  
+
+}
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-right: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+h2 {
+  font-weight: bold;
+}
+.ptak {
+  width: 340px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+#cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: hsla(272, 15%, 50%, 1);     
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: hsla(0, 0%, 90%, 1);
+  padding: 1rem 1rem;
+  gap: 0.5rem;
+  border-radius: 10px;
+}
+.opis {
+  text-align: center;
+}
+@media all and (min-width: 1024px) {
+  .ptak {
+    width: 350px;
+    height: 300px;
+  }
+  #cards-container {
+     flex-direction: row;
+     flex-wrap: wrap;
+  }
+}
+.git {
+  background-image: url("git.svg");
+  transition: all 0.2s ease-out;
+}
+.git:hover {
+  background-image: url("git-hov.svg");
+  transform: translate(0, -4px);
+}
+audio::-webkit-media-controls-panel{
+  background-color: #263560;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  background-color: #B1D4E0;
+  border-radius: 25px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+audio::-webkit-media-controls-volume-slider, audio::-webkit-media-controls-timeline,audio::-webkit-media-controls-time-remaining-display,audio::-webkit-media-controls-current-time-display,audio::-webkit-media-controls-play-button,audio::-webkit-media-controls-mute-button {
+  color: white;
+}
+ footer {
+     background: #263560;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     padding-left: 2rem;
+     padding-right: 2rem;
+     padding-bottom: 1.5rem;
+     margin-top: 2rem;
+   }
+  .circle {
+     border: 1px solid white;
+     border-radius: 100%;
+     background: transparent;
+     width: 35px;
+     height: 35px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .circle:hover {
+     color: hsla(272, 15%, 50%, 1);
+     border-color: hsla(272, 15%, 50%, 1);
+ }
+ .social-icons {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     gap: 0.5rem;
+     margin: 1rem 0;
+ }
+  .fa-brands {
+     font-size: 20px;
+ }
+a:-webkit-any-link {
+  color: white;
+}
+a:hover {
+  color: hsla(272, 15%, 50%, 1);
+     border-color: hsla(272, 15%, 50%, 1);
+}
