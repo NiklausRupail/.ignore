@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 
-::root {
-  --main-bg: #29939D;
-  --main-dark: #263560;
-  --accent: #F6AD4A;
-  --white: #FAF8F4;
-  --light-neutral: #E9E0D0;
-  --neutral: #5a5b5e;
-}
 body {
   background-color: hsla(272, 15%, 50%, 1);
   -webkit-font-smoothing: antialiased;
@@ -33,6 +25,7 @@ h1 {
 }
 h2 {
   font-weight: bold;
+  text-align: center;
 }
 .ptak {
   width: 340px;
@@ -40,7 +33,7 @@ h2 {
   overflow: hidden;
   border-radius: 10px;
 }
-#cards-container {
+article {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,7 +41,7 @@ h2 {
   gap: 1rem;
   background: hsla(272, 15%, 50%, 1);     
 }
-.card {
+section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,9 +50,7 @@ h2 {
   gap: 0.5rem;
   border-radius: 10px;
 }
-.opis {
-  text-align: center;
-}
+
 @media all and (min-width: 1024px) {
   .ptak {
     width: 350px;
@@ -132,4 +123,12 @@ a:-webkit-any-link {
 a:hover {
   color: hsla(272, 15%, 50%, 1);
      border-color: hsla(272, 15%, 50%, 1);
+}
+.bird-text {
+  font-size: 9px;
+  margin-top: 3px;
+}
+#footer-text {
+  text-align: center; 
+  font-size: 15px;
 }
