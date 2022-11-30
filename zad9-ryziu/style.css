@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+img {
+	width: 20%;
+	border-radius: 10px;
+}
+figure {
+	margin: 2rem;
+}
+figure {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+
+div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 1rem;
+}
+figcaption {
+	margin-top: 1rem;
+	text-align: center;
+	font-size: 14px;
+	max-width: 49ch;
+}
+body {
+	margin: 0;
+	background-color: #303030;
+	color: white;
+	font-family: "Lato", sans-serif;
+}
+h1 {
+	font-family: "Calibri", sans-serif;
+	margin-top: 0;
+	font-size: 24px;
+}
